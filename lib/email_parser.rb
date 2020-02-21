@@ -6,11 +6,11 @@
 class EmailAddressParser
   @email_array = []
   def initialize(emails)
-    @emails
+    @emails = emails
   end
   
   def parse
-    @email_array = emails.split(/\,|\ /)
+    @email_array = @emails.split(/\,|\ /)
     @email_array
   end
 end
